@@ -1,6 +1,6 @@
-use std::env;
-
 // Collatz Conjecture
+
+use std::env;
 
 // pub static DEBUG: bool = false;
 pub static DEBUG: bool = true;
@@ -46,7 +46,7 @@ fn main() {
     } else {
         100_u32
     };
-    if start < 1 || end <= start {
+    if start < 1 || end < start {
         return println!("Invalid coordinates, Start: {}, End: {}", start, end);
     }
     for i in start..end + 1 {
