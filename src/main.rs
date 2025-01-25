@@ -49,7 +49,7 @@ fn main() {
     if start < 1 || end <= start {
         return println!("Invalid coordinates, Start: {}, End: {}", start, end);
     }
-    for i in start..end {
+    for i in start..end + 1 {
         if DEBUG {
             println!("Start: {}", &i);
         }
